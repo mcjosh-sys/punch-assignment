@@ -1,7 +1,6 @@
 import Button from "./Button";
 import SectionWrapper from "./SectionWrapper";
 import Trapzoid from "./Trapzoid";
-import s3 from "@assets/3.svg";
 
 const SectionFive = () => {
   return (
