@@ -7,9 +7,9 @@ import Links from "./Links";
 const Footer = () => {
   return (
     <>
-      <Trapzoid className="bg-[#0C0C0C] py-12 -z-10" />
+      <Trapzoid className="bg-[#0C0C0C] py-32 -z-10" />
       <div className="bg-[#0C0C0C] -mt-12 text-white">
-        <SectionWrapper className="relative mb-36">
+        <SectionWrapper className="relative mb-36 -mt-48">
           <Trapzoid className=" bg-primary pt-24 pb-12">
             <div className="flex flex-col items-center justify-center">
               <h2 className="text-heading font-semibold text-center leading-tight">
