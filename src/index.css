@@ -28,7 +28,7 @@ body {
     --secondary: 41, 100%, 59%;
     --secondary-foreground: 216 100% 0.98%;
 
-    --muted: 0, 0%, 97%;
+    --muted: 0, 0%, 94%;
     --muted-foreground: 0, 0%, 58%;
 
     --accent: 213.6 100% 95.1%;
@@ -143,4 +143,9 @@ body {
 
 .footer__links li > a:hover:after {
   width: 100%;
+}
+
+@media  screen and (min-width:850px) {
+  .trapzoid {
+  }
 }
