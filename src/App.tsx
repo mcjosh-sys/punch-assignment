@@ -18,7 +18,7 @@ function App() {
         <SectionOne />
 
         
-        <div className="mt-[76px]">
+        <div className="mt-24">
           <div className="w-full skew-y-[-3deg]">
             <GradientStroke height={14} mb={5} />
             <GradientStroke height={10} mb={6} />
