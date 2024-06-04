@@ -1,10 +1,19 @@
+@import url("https://fonts.cdnfonts.com/css/switzer");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Switzer", sans-serif;
+}
+
 @layer base {
   :root {
-    --background: 216 100% 98.04%;
+    --background: 0 0% 98.1%;
     --foreground: 213.6 100% 4.9%;
 
     --primary: 234, 32%, 47%;
@@ -19,8 +28,8 @@
     --secondary: 41, 100%, 59%;
     --secondary-foreground: 216 100% 0.98%;
 
-    --muted: 213.6 100% 95.1%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 0, 0%, 97%;
+    --muted-foreground: 0, 0%, 58%;
 
     --accent: 213.6 100% 95.1%;
     --accent-foreground: 214.12 100% 50%;
@@ -28,13 +37,15 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --lemon: 114, 69%, 86%;
+    --cgray: 0, 0%, 92.4%;
+
     --border: 0 0% 90.2%;
     --input: 0 0% 90.2%;
     --ring: 214.12 100% 50%;
 
     --radius: 15px;
   }
-
 }
 
 @layer base {
@@ -45,3 +56,34 @@
     @apply bg-background text-foreground;
   }
 }
+
+.accordion-icon {
+  transition: color 0.5s ease;
+}
+
+.accordion-item.active {
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
+.accordion-item.active .accordion-icon {
+  background-color: #8ba4fd;
+  color: white;
+}
+
+.accordion-item.active .accordion-content {
+  height: auto;
+  padding-top: 0.5rem;
+}
+
+.accordion-content {
+  transition: height 2s ease-in-out;
+}
+
+.scroll-hidden{
+  scrollbar-width: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+

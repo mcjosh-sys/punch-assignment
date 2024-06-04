@@ -1,12 +1,14 @@
+import { cn } from "@/lib/utils"
 
 type Props = {
-    children: React.ReactNode
+    children: React.ReactNode,
+    className?: string
 }
 
-const SectionWrapper = ({children}: Props) => {
+const SectionWrapper = ({children, className}: Props) => {
   return (
       <section className="w-full">
-          <div className="max-w-[1400px] mx-auto">
+          <div className={cn("max-w-[1400px] h-fit mx-auto", className)}>
               {children}
           </div>
     </section>

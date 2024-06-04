@@ -20,7 +20,7 @@ const Navbar = () => {
                     <a href='#' className='text-white text-sm mr-3'>
                         Log In
                     </a>
-                    <a href='#' className='bg-white rounded-lg px-5 py-3 mx-2 hover:bg-secondary transition-colors duration-300'>
+                    <a href='#' className='bg-white rounded-lg px-5 py-[0.6rem]  mx-2 hover:bg-secondary transition-colors duration-300'>
                         Join Now
                     </a>
                 </div>
