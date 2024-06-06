@@ -34,7 +34,7 @@ const Tab = () => {
         </TabsList>
         <TabsContent
           value="itanddevelopment"
-          className="flex flex-col items-start mt-6 md:grid  md:grid-cols-3 md:gap-x-[130px] rounded-lg gap-y-[18px]">
+          className="flex flex-col items-center mt-6 md:grid  md:grid-cols-3 md:gap-x-[130px] rounded-lg gap-y-[18px]">
           {content.map((item, id) => (
             <p key={id} className={cn("text-muted-foreground",{
               "font-semibold text-black":item === "MERN Stack Developer"
