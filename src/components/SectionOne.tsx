@@ -9,7 +9,7 @@ import Tab from "./Tab";
 const SectionOne = () => {
   return (
     <SectionWrapper>
-      <div className="mt-[250px] flex flex-col items-center overflow-hidden">
+      <div className="mt-24 lg:mt-[15rem] flex flex-col items-center overflow-hidden">
         <h1 className="text-heading leading-tight text-center font-bold md:max-w-[44rem] mx-1">
           Finding the right fit
           <span className="relative inline-flex justify-center items-center px-8">
